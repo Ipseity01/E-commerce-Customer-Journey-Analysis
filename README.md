@@ -61,8 +61,8 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    ORDER BY u.ltv DESC;
    ```
    **Insight**: High-value customers exhibit both strong lifetime value (LTV) and frequent purchasing activity.
-  - The top customer (User ID 186) has an LTV of $1,215 and made 5 purchases.
-  - Several customers combine high LTV and high purchase frequency, such as User ID 1154 with an LTV of $670 and 22 purchases, indicating strong loyalty.
+   - The top customer (User ID 186) has an LTV of $1,215 and made 5 purchases.
+   - Several customers combine high LTV and high purchase frequency, such as User ID 1154 with an LTV of $670 and 22 purchases, indicating strong loyalty.
     This analysis helps identify VIP customers who contribute disproportionately to revenue and should be prioritized for retention strategies.
 
 3. **Average Purchases per User**
@@ -126,5 +126,16 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    - The highest-selling item was the Google F/C Longsleeve Charcoal with 134 purchases, followed closely by the Google Zip Hoodie F/C (129 purchases) and the                   Super G Unisex Joggers (121 purchases).
    - Apparel items, particularly long-sleeves, hoodies, and joggers, occupy most of the top positions, suggesting a strong customer preference for wearable                      merchandise.
    - The presence of lifestyle items such as the Google Camp Mug Ivory and the Google Clear Pen 4-Pack in the top 10 indicates that non-apparel items also                       contribute significantly to sales, providing cross-selling opportunities.
+
+2. **Revenue by Category**
+   ```sql
+   SELECT i.category, SUM(i.price_in_usd) AS total_revenue
+   FROM events1 e
+   JOIN items i ON e.item_id = i.id
+   WHERE e.type = 'purchase'
+   GROUP BY i.category
+   ORDER BY total_revenue DESC;
+   ```
+   **Insight**
 
 
