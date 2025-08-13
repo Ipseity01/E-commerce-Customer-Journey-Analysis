@@ -51,5 +51,20 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    ```
    **Insight**: The platform had 3,862 active users during the analysis period, representing the total number of unique customers who engaged through at least one activity      (view, add to cart, or purchase).
 
+2. **High LTV Customers with Purchases** - – Customers sorted by their lifetime value and purchase frequency.
+   ```sql
+   SELECT u.id AS user_id, u.ltv, COUNT(*) AS purchase_count
+   FROM users u
+   JOIN events1 e ON u.id = e.user_id
+   WHERE e.type = 'purchase'
+   GROUP BY u.id, u.ltv
+   ORDER BY u.ltv DESC;
+   ```
+   **Insight**: High-value customers exhibit both strong lifetime value (LTV) and frequent purchasing activity.
+                -The top customer (User ID 186) has an LTV of $1,215 and made 5 purchases.
+                -Several customers combine high LTV and high purchase frequency, such as User ID 1154 with an LTV of $670 and 22 purchases, indicating strong loyalty.
+               This analysis helps identify VIP customers who contribute disproportionately to revenue and should be prioritized for retention strategies.
+
+
 
 
