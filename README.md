@@ -61,9 +61,9 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    ORDER BY u.ltv DESC;
    ```
    **Insight**: High-value customers exhibit both strong lifetime value (LTV) and frequent purchasing activity.
-   -The top customer (User ID 186) has an LTV of $1,215 and made 5 purchases.
-   -Several customers combine high LTV and high purchase frequency, such as User ID 1154 with an LTV of $670 and 22 purchases, indicating strong loyalty.
-   This analysis helps identify VIP customers who contribute disproportionately to revenue and should be prioritized for retention strategies.
+-The top customer (User ID 186) has an LTV of $1,215 and made 5 purchases.
+-Several customers combine high LTV and high purchase frequency, such as User ID 1154 with an LTV of $670 and 22 purchases, indicating strong loyalty.
+This analysis helps identify VIP customers who contribute disproportionately to revenue and should be prioritized for retention strategies.
 
 
 
