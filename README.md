@@ -106,9 +106,9 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    HAVING COUNT(*) = 1;
    ```
    **Insight**: A total of 350 customers made only one purchase during the analysis period.
-                - This segment represents customers who engaged with the platform but did not return for repeat transactions.
-                - While some of these may be one-time buyers by nature, others could represent missed opportunities for upselling, cross-selling, or retention campaigns.
-                - Targeted strategies such as post-purchase follow-ups, personalized recommendations, or exclusive discounts could help convert a portion of these single-     purchase customers into repeat buyers, thereby increasing customer lifetime value (LTV).
+   - This segment represents customers who engaged with the platform but did not return for repeat transactions.
+   - While some of these may be one-time buyers by nature, others could represent missed opportunities for upselling, cross-selling, or retention campaigns.
+   - Targeted strategies such as post-purchase follow-ups, personalized recommendations, or exclusive discounts could help convert a portion of these single-purchase            customers into repeat buyers, thereby increasing customer lifetime value (LTV).
 
 ### Product-Based KPIs (`product_based_KPIs.sql`)
 
@@ -123,8 +123,8 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
    LIMIT 10;
    ```
    **Insight**: The top-selling products during the analysis period were dominated by Google-branded apparel and merchandise.
-                - The highest-selling item was the Google F/C Longsleeve Charcoal with 134 purchases, followed closely by the Google Zip Hoodie F/C (129 purchases) and the                   Super G Unisex Joggers (121 purchases).
-                - Apparel items, particularly long-sleeves, hoodies, and joggers, occupy most of the top positions, suggesting a strong customer preference for wearable                      merchandise.
-                - The presence of lifestyle items such as the Google Camp Mug Ivory and the Google Clear Pen 4-Pack in the top 10 indicates that non-apparel items also                       contribute significantly to sales, providing cross-selling opportunities.
+   - The highest-selling item was the Google F/C Longsleeve Charcoal with 134 purchases, followed closely by the Google Zip Hoodie F/C (129 purchases) and the                   Super G Unisex Joggers (121 purchases).
+   - Apparel items, particularly long-sleeves, hoodies, and joggers, occupy most of the top positions, suggesting a strong customer preference for wearable                      merchandise.
+   - The presence of lifestyle items such as the Google Camp Mug Ivory and the Google Clear Pen 4-Pack in the top 10 indicates that non-apparel items also                       contribute significantly to sales, providing cross-selling opportunities.
 
 
