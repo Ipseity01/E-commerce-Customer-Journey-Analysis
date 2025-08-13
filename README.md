@@ -46,8 +46,10 @@ The SQL results were later visualized in **Excel** and **Power BI** for interact
 ### User-Based KPIs (`user_based_KPIs.sql`)
 
 1. **Active Users** – Count of unique users who engaged with the platform.  
+   ```sql
    SELECT COUNT(DISTINCT user_id) AS active_users FROM events1;
-   **Insight**: The platform had 3,862 active users during the analysis period, representing the total number of unique customers who engaged through at least one activity (view, add to cart, or purchase).
+   ```
+   **Insight**: The platform had 3,862 active users during the analysis period, representing the total number of unique customers who engaged through at least one activity      (view, add to cart, or purchase).
 
 
 
