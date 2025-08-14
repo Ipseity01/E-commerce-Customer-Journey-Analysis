@@ -9,8 +9,6 @@ Using **SQL** and three interconnected tables — `events1`, `users`, and `items
 - Time-based trends
 - Geographic and device-based performance
 
-The SQL results were later visualized in **Excel** and **Power BI** for interactive dashboards.
-
 ---
 
 ## Dataset Description
